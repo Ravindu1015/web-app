@@ -1,8 +1,8 @@
 @extends('frontend.layouts.master')
 
-@section('content')
-   
- <!-- Modal Search Start -->
+
+ @section('content')
+    <!-- Modal Search Start -->
  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content rounded-0">
@@ -24,7 +24,50 @@
 
 <!-- Carousel Start -->
 <div class="header-carousel owl-carousel overflow-hidden">
-   @include('frontend.Home.Slider')
+    <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-1"></div>
+        <div class="hero-shape-1"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 animated fadeInLeft">
+                        <div class="text-sm-center text-md-start">
+                            <h4 class="text-white text-uppercase fw-bold mb-4">Current Electricity Services</h4>
+                            <h1 class="display-2 text-white mb-4">Power for Seamless Electricity Solutions</h1>
+                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-2"></div>
+        <div class="hero-shape-2"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 animated fadeInLeft">
+                        <div class="text-sm-center text-md-start">
+                            <h4 class="text-white text-uppercase fw-bold mb-4">Current Electricity Services</h4>
+                            <h1 class="display-2 text-white mb-4">Experience the power of professionalism</h1>
+                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
+                            </p>
+                            <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Carousel End -->
 
@@ -63,7 +106,7 @@
             </div>
             <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
                 <div class="position-relative h-100">
-                    <img src="{{asset('frontend/img/about-1.jpg')}}" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="">
+                    <img src="frontend/img/about-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="">
                     <div class="bg-white">
                         <div class="position-absolute pt-3 bg-white" style="width: 50%; left: 0; bottom: 0;">
                             <div class="bg-primary p-4">
@@ -72,7 +115,7 @@
                             </div>
                         </div>
                         <div class="position-absolute p-3 bg-white pb-0 pe-0" style="width: 50%; bottom: 0; right: 0;">
-                            <img src="{{asset('frontend/img/about-2.jpg')}}" class="img-fluid" alt="">
+                            <img src="frontend/img/about-2.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -140,7 +183,7 @@
                     <div id="ServiceTab-1" class="tab-pane fade show p-0 active">
                         <div class="service-carousel owl-carousel">
                             <div class="service-item">
-                                <img src="{{asset('frontend/img/commercial-1.jpg')}}" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/commercial-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Brite Spark Services</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -149,7 +192,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="{{asset('frontend/img/commercial-2.jpg')}}" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/commercial-2.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Energy Ease Packages</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -158,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="{{asset('img/commercial-3.jpg')}}" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/commercial-3.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Electra Care Packages</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -171,7 +214,7 @@
                     <div id="ServiceTab-2" class="tab-pane fade show p-0">
                         <div class="service-carousel owl-carousel">
                             <div class="service-item">
-                                <img src="img/residential-1.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/residential-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Electrical Services</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -180,7 +223,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="img/residential-2.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/residential-2.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Security Systems</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -189,7 +232,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="img/residential-3.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/residential-3.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Air Conditioner</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -202,7 +245,7 @@
                     <div id="ServiceTab-3" class="tab-pane fade show p-0">
                         <div class="service-carousel owl-carousel">
                             <div class="service-item">
-                                <img src="img/industrial-1.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/industrial-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Factory Manufacture</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -211,7 +254,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/industrial-2.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">General Electrical</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -220,7 +263,7 @@
                                 </div>
                             </div>
                             <div class="service-item">
-                                <img src="img/industrial-3.jpg" class="img-fluid w-100" alt="">
+                                <img src="frontend/img/industrial-3.jpg" class="img-fluid w-100" alt="">
                                 <div class="border border-top-0 p-4">
                                     <h4 class="mb-3">Electrical Planing</h4>
                                     <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
@@ -237,8 +280,164 @@
 </div>
 <!-- Services End -->
 
+<!-- Projects Start -->
+<div class="container-fluid projects bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div>
+                    <h4 class="text-primary">Our Projects</h4>
+                    <h1 class="display-4 mb-4">How to work Our Electricity Projects</h1>
+                    <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum fugiat quae nihil obcaecati,</p>
+                    <ul class="nav">
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Power Path Unveiling Our process</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-2">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Electro Flow Decoding Our method</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-3">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Energetic Engine Behind Scenes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-4">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Watt Works Discover Operations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="tab-content">
+                    <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
+                        <div class="projects-item">
+                            <img src="frontend/img/industrial-1.jpg" class="img-fluid w-100" alt="">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Power Path Unveiling Our process</h4>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
+                                </p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ProjectsTab-2" class="tab-pane fade show p-0">
+                        <div class="projects-item">
+                            <img src="frontend/img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Electro Flow Decoding Our method</h4>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
+                                </p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ProjectsTab-3" class="tab-pane fade show p-0">
+                        <div class="projects-item">
+                            <img src="frontend/img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Energetic Engine Behind Scenes</h4>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
+                                </p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ProjectsTab-4" class="tab-pane fade show p-0">
+                        <div class="projects-item">
+                            <img src="frontend/img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-4">Watt Works Discover Operations</h4>
+                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
+                                </p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
 
 
+<!-- Blog Start -->
+ <div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Blog</h4>
+            <h1 class="display-4 mb-4">Electricity News & Updates</h1>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt provident ab voluptates rerum eaque eum magni autem atque in minus laboriosam corrupti deleniti voluptatibus rem reiciendis modi veniam animi?
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="frontend/img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="blog-heading ms-4">
+                        <a href="#" class="h4 mb-0 p-4">Electrifying Reads Explore Our Electricity</a>
+                    </div>
+                    <div class="blog-content bg-light p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 small"><i class="fa fa-calendar me-2"></i> April 2,2025</p>
+                            <p class="mb-0 small"><i class="fa fa-tag me-2"></i> Electricity Corner</p>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem distinctio tempora eum quam eligendi. Repudiandae voluptas voluptatibus quo itaque!
+                        </p>
+                        <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="frontend/img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="blog-heading ms-4">
+                        <a href="#" class="h4 mb-0 p-4">Empowering Energy Dive into Our Electricity </a>
+                    </div>
+                    <div class="blog-content bg-light p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 small"><i class="fa fa-calendar me-2"></i> April 2,2025</p>
+                            <p class="mb-0 small"><i class="fa fa-tag me-2"></i> Electricity Corner</p>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem distinctio tempora eum quam eligendi. Repudiandae voluptas voluptatibus quo itaque!
+                        </p>
+                        <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="frontend/img/commercial-3.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="blog-heading ms-4">
+                        <a href="#" class="h4 mb-0 p-4">Electricity Explained: Bloggin Power of Tomorrow</a>
+                    </div>
+                    <div class="blog-content bg-light p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 small"><i class="fa fa-calendar me-2"></i> April 2,2025</p>
+                            <p class="mb-0 small"><i class="fa fa-tag me-2"></i> Electricity Corner</p>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem distinctio tempora eum quam eligendi. Repudiandae voluptas voluptatibus quo itaque!
+                        </p>
+                        <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- Blog End -->
 
 <!-- Team Start -->
  <div class="container-fluid team pb-5">
@@ -253,7 +452,7 @@
             <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
+                        <img src="frontend/img/team-1.jpg" class="img-fluid w-100" alt="">
                         <div class="team-icon">
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -270,7 +469,7 @@
             <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
+                        <img src="frontend/img/team-2.jpg" class="img-fluid w-100" alt="">
                         <div class="team-icon">
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -287,7 +486,7 @@
             <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
+                        <img src="frontend/img/team-3.jpg" class="img-fluid w-100" alt="">
                         <div class="team-icon">
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -304,7 +503,7 @@
             <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
+                        <img src="frontend/img/team-4.jpg" class="img-fluid w-100" alt="">
                         <div class="team-icon">
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -325,8 +524,157 @@
 
 
 <!-- Testimonial Start -->
-@include('frontend.Home.testimonial')
+<div class="container-fluid testimonial bg-dark py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="text-primary">Testimonial</h4>
+                <h1 class="display-4 text-white mb-4">Powerfull Praise Heare From Our Customers</h1>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia hic aspernatur unde magnam necessitatibus provident iusto maxime nobis esse eligendi.
+                </p>
+                <a class="btn btn-light py-3 px-5" href="#">View All Reviews</a>
+            </div>
+            <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="testimonial-inner p-4">
+                            <img src="frontend/img/testimonial-1.jpg" class="img-fluid" alt="">
+                            <div class="ms-4">
+                                <h4>Person Name</h4>
+                                <p>Profession</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta neque ab repudiandae reprehenderit ipsum eos cumque esse repellendus impedit.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="testimonial-inner p-4">
+                            <img src="frontend/img/testimonial-2.jpg" class="img-fluid" alt="">
+                            <div class="ms-4">
+                                <h4>Person Name</h4>
+                                <p>Profession</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta neque ab repudiandae reprehenderit ipsum eos cumque esse repellendus impedit.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="testimonial-inner p-4">
+                            <img src="frontend/img/testimonial-3.jpg" class="img-fluid" alt="">
+                            <div class="ms-4">
+                                <h4>Person Name</h4>
+                                <p>Profession</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta neque ab repudiandae reprehenderit ipsum eos cumque esse repellendus impedit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
 <!-- Testimonial End -->
 
 
-@endsection
+<!-- FAQ Start -->
+ <div class="container-fluid faq-section bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="text-primary">Some Important FAQ's</h4>
+                <h1 class="display-4 mb-4">Common Frequently Asked Questions?</h1>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur sapiente, modi perspiciatis earum ab inventore vitae consequatur tempore quibusdam?
+                </p>
+                <a class="btn btn-primary py-3 px-5" href="#">Have Any Questions</a>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="h-100">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q: How Do I Sing Up For Your Electricity Services?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Q: What Types Of Electricity Plans Do You Offer?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Q: What Are Your Billing And Payment Options?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Q: How Can I Track My Energy Usage With Your Services?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- FAQ End -->
+ 
+ @endsection
